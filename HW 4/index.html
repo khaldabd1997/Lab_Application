@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <link rel="stylesheet" href="styles.css">
+  <title>Form</title>
+  
+</head>
+<body>
+  <h1>Form </h1>
+  
+  <form action="process.php" method="get" target="_blank">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <form action="process.php" method="post" target="_self">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+    <input type="submit" value="Submit">
+  </form>
+
+
+  
+  <button onclick="drawRectangle()">Draw Rectangle</button>
+  <canvas id="myCanvas" width="400" height="200"></canvas>
+
+  <script>
+    function drawRectangle() {
+      var canvas = document.getElementById('myCanvas');
+      var context = canvas.getContext('2d');
+      
+      // Clear canvas
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      
+      // Draw rectangle
+      context.fillStyle = 'red';
+      context.fillRect(50, 50, 200, 100);
+    }
+  </script>
+</body>
+</html>
