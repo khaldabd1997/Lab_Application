@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW1</title>
+    <style>
+        
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+        
+    </style>
+    <script>
+        function dialNumber() {
+            
+            window.location.href = "tel:05526221539";
+        }
+
+        function runScript() {
+           
+            alert("Hello, World!");
+        }
+
+        function sendEmail() {
+            
+            window.location.href = "mailto:khaldabd1998@gmail.com?subject=Hello sir&body=my name is halit";
+        }
+    </script>
+
+</head>
+<body>
+    <h1>My Website</h1>
+
+    <p>Here are some links:</p>
+
+   
+    <a href="https://muh.karabuk.edu.tr/index.aspx">Visit Example</a>
+
+    <a href="#section2">Go to Section 2</a>
+
+   
+    <a href="another-page.html">Go to Another Page</a>
+
+    <p>Click the buttons below for additional actions:</p>
+
+    
+    <button onclick="dialNumber()">Number</button>
+
+   
+    <button onclick="runScript()">Run Script</button>
+
+   
+    <button onclick="sendEmail()">Send Email</button>
+
+    <div id="section2">
+        <!-- Anchor target -->
+        This is Section 2.
+    </div>
+    <p style="background-color: yellow;">This paragraph has a yellow background.</p>
+    <img src="image.jpeg" alt="jpegjpegjpegjpeg" width="300" height="200">
+
+    <map name="map">
+        <area shape="rect" coords="34, 44, 0, 0" href="computer.htm" alt="Link area">
+      </map>
+
+</body>
+</html>
